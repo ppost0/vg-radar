@@ -1,4 +1,6 @@
 const path = require("path");
+const HtmlWebpackPlugin = require('html-webpack-plugin');
+
 
 module.exports = {
   entry: './src/index.js',
@@ -22,14 +24,8 @@ module.exports = {
       }
     ]
   },
-  // plugins: [
-  //   new NodePolyfillPlugin()
-  // ],
-  // resolve: {
-  //   fallback: {
-  //       "fs": false,
-  //       "child_process": false,
-  //   },
-  // },
-  mode: 'development',
+  plugins: [new HtmlWebpackPlugin({
+    template: './index.html'
+  })],
+  mode: 'development'
 }

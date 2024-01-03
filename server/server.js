@@ -3,13 +3,21 @@ const path = require('path');
 const app = express();
 const PORT = 3000;
 
-const feedController = require('../feedController');
+const feedController = require('./controllers/feedController');
+
+// Serve static files
+app.use(express.static(path.resolve(__dirname, '../public')));
 
 
 // Serve main HTML
-app.get('/', feedController.loadFeed, (req, res) => {
-  return res.sendFile(path.join(__dirname, '../public/index.html'));
+// app.get('/', (req, res) => {
+//   res.sendFile(path.join(__dirname, '../public/index.html'));
+// })
+
+app.get('/feed', feedController.loadFeed, (req, res) => {
+  res.status(200).send(res.locals.feed);
 })
+
 
 
 // Catch-all route handler
@@ -27,7 +35,7 @@ app.use((err, req, res, next) => {
   }
   const errorObj = Object.assign({}, defaultErr, err);
   console.log(errorObj.log);
-  return res.status(errorObj.status).json(errorObj.message);
+  res.status(errorObj.status).json(errorObj.message);
 })
 
 
