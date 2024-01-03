@@ -1,0 +1,9 @@
+{
+  "presets": [
+      "@babel/preset-env", //compiling ES2015+ syntax
+      "@babel/preset-react" //for react
+  ],
+  "plugins": [
+      "@babel/plugin-transform-runtime"
+  ]
+}
