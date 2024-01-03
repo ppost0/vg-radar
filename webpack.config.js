@@ -21,5 +21,15 @@ module.exports = {
           use:  'babel-loader' //loader which we are going to use
       }
     ]
-  }
+  },
+  // plugins: [
+  //   new NodePolyfillPlugin()
+  // ],
+  // resolve: {
+  //   fallback: {
+  //       "fs": false,
+  //       "child_process": false,
+  //   },
+  // },
+  mode: 'development',
 }
