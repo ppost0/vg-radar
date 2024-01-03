@@ -1,0 +1,18 @@
+{
+  "name": "vg-radar",
+  "version": "1.0.0",
+  "description": "Pools gaming news articles from various sources",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "author": "Patrick Post",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.18.2"
+  },
+  "devDependencies": {
+    "nodemon": "^3.0.2"
+  }
+}
