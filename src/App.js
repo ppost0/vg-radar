@@ -1,15 +1,13 @@
 import React from "react";
+import Feed from './components/Feed.js'
 
 const App = () =>{
 
   return (
-
-    <div>
-        <h1>
-            Welcome to React App built using Webpack
-        </h1>
-    </div>
-
+        <main>
+          <h1>VG Radar - Gaming News</h1>
+          <Feed></Feed>
+        </main>
   )
 }
 

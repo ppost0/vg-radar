@@ -13,7 +13,11 @@ module.exports = {
     static: ["./public"],
     open: true,
     hot: true ,
-    liveReload: true
+    liveReload: true,
+    proxy: {
+      // '/': 'localhost:3000',
+      '/feed': 'http://localhost:3000'
+    }
   },
   module: {
     rules: [
@@ -25,7 +29,7 @@ module.exports = {
     ]
   },
   plugins: [new HtmlWebpackPlugin({
-    template: './public/index.html'
+    template: './template.html'
   })],
   mode: 'development'
 }

@@ -15,13 +15,13 @@ app.use(express.static(path.resolve(__dirname, '../public')));
 // })
 
 app.get('/feed', feedController.loadFeed, (req, res) => {
-  res.status(200).send(res.locals.feed);
+  return res.status(200).send(res.locals.feed);
 })
 
 
 // Catch-all route handler
 app.use('/*', (req, res) => {
-  res.status(404).send('Page not found - 404');
+  return res.status(404).send('Page not found - 404');
 })
 
 
@@ -34,7 +34,7 @@ app.use((err, req, res, next) => {
   }
   const errorObj = Object.assign({}, defaultErr, err);
   console.log(errorObj.log);
-  res.status(errorObj.status).json(errorObj.message);
+  return res.status(errorObj.status).json(errorObj.message);
 })
 
 

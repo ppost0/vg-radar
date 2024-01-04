@@ -19,17 +19,6 @@ feedController.loadFeed = (req, res, next) => {
 
     res.locals.feed = feed;
 
-
-    // loop through feed:
-      // for each feed item:
-        // render a React Article component that has a title, image, description, and date to the feed
-
-    // trying to render react component to get started
-    // App();
-
-
-
-
     return next();
   });
 
