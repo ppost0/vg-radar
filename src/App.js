@@ -1,13 +1,15 @@
 import React from "react";
-import Feed from './components/Feed.js'
-import logo from '../public/assets/logo.png'
+import Feed from './components/Feed.js';
+import NavBar from './components/NavBar.js';
+
+import logo from '../public/assets/logo.png';
 
 const App = () =>{
 
   return (
         <main>
-          <h1>VG Radar - Gaming News</h1>
-          <img src={logo}></img>
+          <NavBar></NavBar>
+          <img className='logo' src={logo}></img>
           <Feed></Feed>
         </main>
   )

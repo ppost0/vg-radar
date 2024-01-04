@@ -1,22 +1,55 @@
 @import url('https://fonts.googleapis.com/css2?family=Play&display=swap');
 
+
 html {
-  background-color: rgb(74, 50, 83);
-  width: 100vw;
+  background-color: rgb(49, 39, 52);
+  /* width: 100vw; */
+  --white: rgb(240, 240, 240);
 }
+
+body{
+  margin: 0 0 1vw 0;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.navbar {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  width: 100%;
+  height: 4vw;
+  color: white;
+  font-size: calc(1vw + 3px);
+  background-color: rgb(10, 10, 10);
+  div {
+    padding: 0 1%;
+  }
+}
+
 
 h1 {
   font-family: 'Play', sans-serif;
   font-size: 3em;
   text-align: center;
-  color: white;
+  color: var(--white);
+}
+
+.logo {
+  height: 20vw;
+  width: 20vw;
+  margin: 2vw 0;
 }
 
 .feed {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 1vw;
-  border-top: 1px solid white;
+  border-top: 1px solid var(--white);
   padding-top: 5vw;
   margin: 0 5vw;
 }
@@ -32,11 +65,11 @@ h1 {
 }
 
 .title {
-  color: white;
+  color: var(--white);
   text-decoration: none;
 }
 
 .date {
-  color: gray;
+  color: rgb(193, 193, 193);
   font-size: calc(1vw + 2px);
 }

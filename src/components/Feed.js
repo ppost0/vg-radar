@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
 import Article from './Article.js'
+import dateFormat, { masks } from "dateformat";
 
 const Feed = () => {
 
@@ -10,7 +11,7 @@ const Feed = () => {
 
   const [articles, setArticles] = useState([]);
 
-
+    // Fetch IGN RSS feed
     useEffect(() => {
       fetch('/feed')
         .then(data => data.json())
@@ -22,7 +23,7 @@ const Feed = () => {
             list.push(
               <Article key={ currentArticle.link }
                 title={ currentArticle.title }
-                date={ currentArticle.pubDate }
+                date={ dateFormat(currentArticle.pubDate, "dddd, mmmm dS, h:MM TT") }
                 url={ currentArticle.link }
                 description={ currentArticle.description }>
               </Article>
