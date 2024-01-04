@@ -20,6 +20,8 @@ const Feed = () => {
           for (let i = 0; i < json.items.length; i++) {
             const currentArticle = json.items[i];
             console.log(currentArticle.title);
+            console.log(currentArticle.media);
+
             list.push(
               <Article key={ currentArticle.link }
                 title={ currentArticle.title }
