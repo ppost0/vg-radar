@@ -5,10 +5,8 @@ const Article = (props) => {
   return (
 
    <div className='article'>
-    <div className='title'>{props.title}</div>
+    <a className='title' href={props.url}>{props.title}</a>
     <div className='date'>{props.date}</div>
-    <div className='url'>{props.url}</div>
-
    </div>
 
   )

@@ -1,0 +1,42 @@
+@import url('https://fonts.googleapis.com/css2?family=Play&display=swap');
+
+html {
+  background-color: rgb(74, 50, 83);
+  width: 100vw;
+}
+
+h1 {
+  font-family: 'Play', sans-serif;
+  font-size: 3em;
+  text-align: center;
+  color: white;
+}
+
+.feed {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1vw;
+  border-top: 1px solid white;
+  padding-top: 5vw;
+  margin: 0 5vw;
+}
+
+.article {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  padding: calc(1vw + 1px);
+  border: 1px solid black;
+  height: 10vw;
+  font-size: calc(1vw + 5px);
+}
+
+.title {
+  color: white;
+  text-decoration: none;
+}
+
+.date {
+  color: gray;
+  font-size: calc(1vw + 2px);
+}

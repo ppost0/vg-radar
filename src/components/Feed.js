@@ -17,8 +17,16 @@ const Feed = () => {
         .then((json) => {
           const list = [];
           for (let i = 0; i < json.items.length; i++) {
-            console.log(json.items[i].title);
-            list.push(<Article key={ json.items[i].link } title={ json.items[i].title } date={ json.items[i].pubDate } url={ json.items[i].link }> </Article>);
+            const currentArticle = json.items[i];
+            console.log(currentArticle.title);
+            list.push(
+              <Article key={ currentArticle.link }
+                title={ currentArticle.title }
+                date={ currentArticle.pubDate }
+                url={ currentArticle.link }
+                description={ currentArticle.description }>
+              </Article>
+            );
           }
           console.log(articles, 'articles');
           setArticles(list);
