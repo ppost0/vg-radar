@@ -20,17 +20,18 @@ const Feed = () => {
           for (let i = 0; i < json.items.length; i++) {
             const currentArticle = json.items[i];
             console.log(currentArticle.title);
-            console.log(currentArticle.media);
+            console.log(json.items[i].content, 'items');
 
             list.push(
               <Article key={ currentArticle.link }
                 title={ currentArticle.title }
+                description= { currentArticle.content }
                 date={ dateFormat(currentArticle.pubDate, "dddd, mmmm dS, h:MMtt") }
-                url={ currentArticle.link }
-                description={ currentArticle.description }>
+                url={ currentArticle.link }>
               </Article>
             );
           }
+          console.log(json.items);
           console.log(articles, 'articles');
           setArticles(list);
         })

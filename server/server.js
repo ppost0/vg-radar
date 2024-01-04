@@ -15,6 +15,7 @@ app.use(express.static(path.resolve(__dirname, '../public')));
 // })
 
 app.get('/feed', feedController.loadFeed, (req, res) => {
+  console.log('reached router')
   return res.status(200).send(res.locals.feed);
 })
 
