@@ -23,7 +23,7 @@ const Feed = () => {
             list.push(
               <Article key={ currentArticle.link }
                 title={ currentArticle.title }
-                date={ dateFormat(currentArticle.pubDate, "dddd, mmmm dS, h:MM TT") }
+                date={ dateFormat(currentArticle.pubDate, "dddd, mmmm dS, h:MMtt") }
                 url={ currentArticle.link }
                 description={ currentArticle.description }>
               </Article>

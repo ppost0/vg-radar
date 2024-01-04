@@ -16,7 +16,7 @@
   \********************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\n/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ \"./node_modules/react/index.js\");\n/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);\n/* harmony import */ var _components_Feed_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./components/Feed.js */ \"./src/components/Feed.js\");\n\n\nvar App = function App() {\n  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(\"main\", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(\"h1\", null, \"VG Radar - Gaming News\"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_components_Feed_js__WEBPACK_IMPORTED_MODULE_1__[\"default\"], null));\n};\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (App);\n\n//# sourceURL=webpack://vg-radar/./src/App.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\n/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ \"./node_modules/react/index.js\");\n/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);\n/* harmony import */ var _components_Feed_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./components/Feed.js */ \"./src/components/Feed.js\");\n/* harmony import */ var _components_NavBar_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./components/NavBar.js */ \"./src/components/NavBar.js\");\n/* harmony import */ var _components_Sidebar_js__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./components/Sidebar.js */ \"./src/components/Sidebar.js\");\n/* harmony import */ var _public_assets_logo_png__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../public/assets/logo.png */ \"./public/assets/logo.png\");\n\n\n\n\n\nvar App = function App() {\n  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(\"main\", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_components_NavBar_js__WEBPACK_IMPORTED_MODULE_2__[\"default\"], null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(\"div\", {\n    className: \"main-container\"\n  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_components_Sidebar_js__WEBPACK_IMPORTED_MODULE_3__[\"default\"], null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_components_Feed_js__WEBPACK_IMPORTED_MODULE_1__[\"default\"], null)));\n};\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (App);\n\n//# sourceURL=webpack://vg-radar/./src/App.js?");
 
 /***/ }),
 
@@ -26,7 +26,7 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpac
   \***********************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\n/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ \"./node_modules/react/index.js\");\n/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);\n\nvar Article = function Article() {\n  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(\"div\", null, \"Hi\");\n};\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (Article);\n\n//# sourceURL=webpack://vg-radar/./src/components/Article.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\n/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ \"./node_modules/react/index.js\");\n/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);\n\nvar Article = function Article(props) {\n  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(\"div\", {\n    className: \"article\"\n  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(\"a\", {\n    className: \"title\",\n    href: props.url\n  }, props.title), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(\"div\", {\n    className: \"date\"\n  }, props.date));\n};\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (Article);\n\n//# sourceURL=webpack://vg-radar/./src/components/Article.js?");
 
 /***/ }),
 
@@ -36,7 +36,27 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpac
   \********************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\n/* harmony import */ var _babel_runtime_helpers_slicedToArray__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @babel/runtime/helpers/slicedToArray */ \"./node_modules/@babel/runtime/helpers/esm/slicedToArray.js\");\n/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react */ \"./node_modules/react/index.js\");\n/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_1__);\n/* harmony import */ var _Article_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./Article.js */ \"./src/components/Article.js\");\n\n\n\nvar Feed = function Feed() {\n  // fetch request to server /feeds:\n  // retrieve feed data:\n  // for each feed entry:\n  // render an Article component\n\n  var _useState = (0,react__WEBPACK_IMPORTED_MODULE_1__.useState)([]),\n    _useState2 = (0,_babel_runtime_helpers_slicedToArray__WEBPACK_IMPORTED_MODULE_0__[\"default\"])(_useState, 2),\n    articles = _useState2[0],\n    setArticles = _useState2[1];\n  (0,react__WEBPACK_IMPORTED_MODULE_1__.useEffect)(function () {\n    fetch('/feed').then(function (data) {\n      return data.json();\n    }).then(function (json) {\n      for (var i = 0; i < json.items.length; i++) {\n        console.log(json.items[i].title);\n        articles.push( /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default().createElement(_Article_js__WEBPACK_IMPORTED_MODULE_2__[\"default\"], {\n          key: json.items[i].link\n        }, \"  \"));\n      }\n    });\n  }, []);\n  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default().createElement(\"section\", {\n    className: \"feed\"\n  }, articles);\n};\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (Feed);\n\n//# sourceURL=webpack://vg-radar/./src/components/Feed.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\n/* harmony import */ var _babel_runtime_helpers_slicedToArray__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @babel/runtime/helpers/slicedToArray */ \"./node_modules/@babel/runtime/helpers/esm/slicedToArray.js\");\n/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react */ \"./node_modules/react/index.js\");\n/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_1__);\n/* harmony import */ var _Article_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./Article.js */ \"./src/components/Article.js\");\n/* harmony import */ var dateformat__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! dateformat */ \"./node_modules/dateformat/lib/dateformat.js\");\n\n\n\n\nvar Feed = function Feed() {\n  // fetch request to server /feeds:\n  // retrieve feed data:\n  // for each feed entry:\n  // render an Article component\n\n  var _useState = (0,react__WEBPACK_IMPORTED_MODULE_1__.useState)([]),\n    _useState2 = (0,_babel_runtime_helpers_slicedToArray__WEBPACK_IMPORTED_MODULE_0__[\"default\"])(_useState, 2),\n    articles = _useState2[0],\n    setArticles = _useState2[1];\n\n  // Fetch IGN RSS feed\n  (0,react__WEBPACK_IMPORTED_MODULE_1__.useEffect)(function () {\n    fetch('/feed').then(function (data) {\n      return data.json();\n    }).then(function (json) {\n      var list = [];\n      for (var i = 0; i < json.items.length; i++) {\n        var currentArticle = json.items[i];\n        console.log(currentArticle.title);\n        list.push( /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default().createElement(_Article_js__WEBPACK_IMPORTED_MODULE_2__[\"default\"], {\n          key: currentArticle.link,\n          title: currentArticle.title,\n          date: (0,dateformat__WEBPACK_IMPORTED_MODULE_3__[\"default\"])(currentArticle.pubDate, \"dddd, mmmm dS, h:MMtt\"),\n          url: currentArticle.link,\n          description: currentArticle.description\n        }));\n      }\n      console.log(articles, 'articles');\n      setArticles(list);\n    });\n  }, []);\n  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default().createElement(\"section\", {\n    className: \"feed\"\n  }, articles);\n};\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (Feed);\n\n//# sourceURL=webpack://vg-radar/./src/components/Feed.js?");
+
+/***/ }),
+
+/***/ "./src/components/NavBar.js":
+/*!**********************************!*\
+  !*** ./src/components/NavBar.js ***!
+  \**********************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\n/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ \"./node_modules/react/index.js\");\n/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);\n\nvar NavBar = function NavBar() {\n  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(\"div\", {\n    className: \"navbar\"\n  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(\"div\", null, \"NEWS\"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(\"div\", null, \"REVIEWS\"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(\"div\", null, \"PROFILE\"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(\"div\", null, \"LOGIN / SIGNUP\"));\n};\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (NavBar);\n\n//# sourceURL=webpack://vg-radar/./src/components/NavBar.js?");
+
+/***/ }),
+
+/***/ "./src/components/Sidebar.js":
+/*!***********************************!*\
+  !*** ./src/components/Sidebar.js ***!
+  \***********************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\n/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ \"./node_modules/react/index.js\");\n/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);\n/* harmony import */ var _public_assets_logo_png__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../public/assets/logo.png */ \"./public/assets/logo.png\");\n\n\nvar Sidebar = function Sidebar() {\n  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(\"div\", {\n    className: \"sidebar\"\n  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(\"img\", {\n    className: \"logo\",\n    src: _public_assets_logo_png__WEBPACK_IMPORTED_MODULE_1__[\"default\"]\n  }));\n};\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (Sidebar);\n\n//# sourceURL=webpack://vg-radar/./src/components/Sidebar.js?");
 
 /***/ }),
 
@@ -47,6 +67,16 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpac
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ \"./node_modules/react/index.js\");\n/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);\n/* harmony import */ var react_dom__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react-dom */ \"./node_modules/react-dom/index.js\");\n/* harmony import */ var react_dom_client__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! react-dom/client */ \"./node_modules/react-dom/client.js\");\n/* harmony import */ var _App__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./App */ \"./src/App.js\");\n\n\n\n\nvar container = document.getElementById('root');\nvar root = (0,react_dom_client__WEBPACK_IMPORTED_MODULE_2__.createRoot)(container); // createRoot(container!) if you use TypeScript\nroot.render( /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_App__WEBPACK_IMPORTED_MODULE_3__[\"default\"], {\n  tab: \"home\"\n}));\n\n//# sourceURL=webpack://vg-radar/./src/index.js?");
+
+/***/ }),
+
+/***/ "./public/assets/logo.png":
+/*!********************************!*\
+  !*** ./public/assets/logo.png ***!
+  \********************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (__webpack_require__.p + \"9e8385be4f45f7531f5ee940df219c7d.png\");\n\n//# sourceURL=webpack://vg-radar/./public/assets/logo.png?");
 
 /***/ }),
 
@@ -178,6 +208,16 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpac
 
 eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (/* binding */ _unsupportedIterableToArray)\n/* harmony export */ });\n/* harmony import */ var _arrayLikeToArray_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./arrayLikeToArray.js */ \"./node_modules/@babel/runtime/helpers/esm/arrayLikeToArray.js\");\n\nfunction _unsupportedIterableToArray(o, minLen) {\n  if (!o) return;\n  if (typeof o === \"string\") return (0,_arrayLikeToArray_js__WEBPACK_IMPORTED_MODULE_0__[\"default\"])(o, minLen);\n  var n = Object.prototype.toString.call(o).slice(8, -1);\n  if (n === \"Object\" && o.constructor) n = o.constructor.name;\n  if (n === \"Map\" || n === \"Set\") return Array.from(o);\n  if (n === \"Arguments\" || /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/.test(n)) return (0,_arrayLikeToArray_js__WEBPACK_IMPORTED_MODULE_0__[\"default\"])(o, minLen);\n}\n\n//# sourceURL=webpack://vg-radar/./node_modules/@babel/runtime/helpers/esm/unsupportedIterableToArray.js?");
 
+/***/ }),
+
+/***/ "./node_modules/dateformat/lib/dateformat.js":
+/*!***************************************************!*\
+  !*** ./node_modules/dateformat/lib/dateformat.js ***!
+  \***************************************************/
+/***/ ((__unused_webpack___webpack_module__, __webpack_exports__, __webpack_require__) => {
+
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (/* binding */ dateFormat),\n/* harmony export */   formatTimezone: () => (/* binding */ formatTimezone),\n/* harmony export */   i18n: () => (/* binding */ i18n),\n/* harmony export */   masks: () => (/* binding */ masks)\n/* harmony export */ });\nvar token=/d{1,4}|D{3,4}|m{1,4}|yy(?:yy)?|([HhMsTt])\\1?|W{1,2}|[LlopSZN]|\"[^\"]*\"|'[^']*'/g;var timezone=/\\b(?:[A-Z]{1,3}[A-Z][TC])(?:[-+]\\d{4})?|((?:Australian )?(?:Pacific|Mountain|Central|Eastern|Atlantic) (?:Standard|Daylight|Prevailing) Time)\\b/g;var timezoneClip=/[^-+\\dA-Z]/g;function dateFormat(date,mask,utc,gmt){if(arguments.length===1&&typeof date===\"string\"&&!/\\d/.test(date)){mask=date;date=undefined}date=date||date===0?date:new Date;if(!(date instanceof Date)){date=new Date(date)}if(isNaN(date)){throw TypeError(\"Invalid date\")}mask=String(masks[mask]||mask||masks[\"default\"]);var maskSlice=mask.slice(0,4);if(maskSlice===\"UTC:\"||maskSlice===\"GMT:\"){mask=mask.slice(4);utc=true;if(maskSlice===\"GMT:\"){gmt=true}}var _=function _(){return utc?\"getUTC\":\"get\"};var _d=function d(){return date[_()+\"Date\"]()};var D=function D(){return date[_()+\"Day\"]()};var _m=function m(){return date[_()+\"Month\"]()};var y=function y(){return date[_()+\"FullYear\"]()};var _H=function H(){return date[_()+\"Hours\"]()};var _M=function M(){return date[_()+\"Minutes\"]()};var _s=function s(){return date[_()+\"Seconds\"]()};var _L=function L(){return date[_()+\"Milliseconds\"]()};var _o=function o(){return utc?0:date.getTimezoneOffset()};var _W=function W(){return getWeek(date)};var _N=function N(){return getDayOfWeek(date)};var flags={d:function d(){return _d()},dd:function dd(){return pad(_d())},ddd:function ddd(){return i18n.dayNames[D()]},DDD:function DDD(){return getDayName({y:y(),m:_m(),d:_d(),_:_(),dayName:i18n.dayNames[D()],short:true})},dddd:function dddd(){return i18n.dayNames[D()+7]},DDDD:function DDDD(){return getDayName({y:y(),m:_m(),d:_d(),_:_(),dayName:i18n.dayNames[D()+7]})},m:function m(){return _m()+1},mm:function mm(){return pad(_m()+1)},mmm:function mmm(){return i18n.monthNames[_m()]},mmmm:function mmmm(){return i18n.monthNames[_m()+12]},yy:function yy(){return String(y()).slice(2)},yyyy:function yyyy(){return pad(y(),4)},h:function h(){return _H()%12||12},hh:function hh(){return pad(_H()%12||12)},H:function H(){return _H()},HH:function HH(){return pad(_H())},M:function M(){return _M()},MM:function MM(){return pad(_M())},s:function s(){return _s()},ss:function ss(){return pad(_s())},l:function l(){return pad(_L(),3)},L:function L(){return pad(Math.floor(_L()/10))},t:function t(){return _H()<12?i18n.timeNames[0]:i18n.timeNames[1]},tt:function tt(){return _H()<12?i18n.timeNames[2]:i18n.timeNames[3]},T:function T(){return _H()<12?i18n.timeNames[4]:i18n.timeNames[5]},TT:function TT(){return _H()<12?i18n.timeNames[6]:i18n.timeNames[7]},Z:function Z(){return gmt?\"GMT\":utc?\"UTC\":formatTimezone(date)},o:function o(){return(_o()>0?\"-\":\"+\")+pad(Math.floor(Math.abs(_o())/60)*100+Math.abs(_o())%60,4)},p:function p(){return(_o()>0?\"-\":\"+\")+pad(Math.floor(Math.abs(_o())/60),2)+\":\"+pad(Math.floor(Math.abs(_o())%60),2)},S:function S(){return[\"th\",\"st\",\"nd\",\"rd\"][_d()%10>3?0:(_d()%100-_d()%10!=10)*_d()%10]},W:function W(){return _W()},WW:function WW(){return pad(_W())},N:function N(){return _N()}};return mask.replace(token,function(match){if(match in flags){return flags[match]()}return match.slice(1,match.length-1)})}var masks={default:\"ddd mmm dd yyyy HH:MM:ss\",shortDate:\"m/d/yy\",paddedShortDate:\"mm/dd/yyyy\",mediumDate:\"mmm d, yyyy\",longDate:\"mmmm d, yyyy\",fullDate:\"dddd, mmmm d, yyyy\",shortTime:\"h:MM TT\",mediumTime:\"h:MM:ss TT\",longTime:\"h:MM:ss TT Z\",isoDate:\"yyyy-mm-dd\",isoTime:\"HH:MM:ss\",isoDateTime:\"yyyy-mm-dd'T'HH:MM:sso\",isoUtcDateTime:\"UTC:yyyy-mm-dd'T'HH:MM:ss'Z'\",expiresHeaderFormat:\"ddd, dd mmm yyyy HH:MM:ss Z\"};var i18n={dayNames:[\"Sun\",\"Mon\",\"Tue\",\"Wed\",\"Thu\",\"Fri\",\"Sat\",\"Sunday\",\"Monday\",\"Tuesday\",\"Wednesday\",\"Thursday\",\"Friday\",\"Saturday\"],monthNames:[\"Jan\",\"Feb\",\"Mar\",\"Apr\",\"May\",\"Jun\",\"Jul\",\"Aug\",\"Sep\",\"Oct\",\"Nov\",\"Dec\",\"January\",\"February\",\"March\",\"April\",\"May\",\"June\",\"July\",\"August\",\"September\",\"October\",\"November\",\"December\"],timeNames:[\"a\",\"p\",\"am\",\"pm\",\"A\",\"P\",\"AM\",\"PM\"]};var pad=function pad(val){var len=arguments.length>1&&arguments[1]!==undefined?arguments[1]:2;return String(val).padStart(len,\"0\")};var getDayName=function getDayName(_ref){var y=_ref.y,m=_ref.m,d=_ref.d,_=_ref._,dayName=_ref.dayName,_ref$short=_ref[\"short\"],_short=_ref$short===void 0?false:_ref$short;var today=new Date;var yesterday=new Date;yesterday.setDate(yesterday[_+\"Date\"]()-1);var tomorrow=new Date;tomorrow.setDate(tomorrow[_+\"Date\"]()+1);var today_d=function today_d(){return today[_+\"Date\"]()};var today_m=function today_m(){return today[_+\"Month\"]()};var today_y=function today_y(){return today[_+\"FullYear\"]()};var yesterday_d=function yesterday_d(){return yesterday[_+\"Date\"]()};var yesterday_m=function yesterday_m(){return yesterday[_+\"Month\"]()};var yesterday_y=function yesterday_y(){return yesterday[_+\"FullYear\"]()};var tomorrow_d=function tomorrow_d(){return tomorrow[_+\"Date\"]()};var tomorrow_m=function tomorrow_m(){return tomorrow[_+\"Month\"]()};var tomorrow_y=function tomorrow_y(){return tomorrow[_+\"FullYear\"]()};if(today_y()===y&&today_m()===m&&today_d()===d){return _short?\"Tdy\":\"Today\"}else if(yesterday_y()===y&&yesterday_m()===m&&yesterday_d()===d){return _short?\"Ysd\":\"Yesterday\"}else if(tomorrow_y()===y&&tomorrow_m()===m&&tomorrow_d()===d){return _short?\"Tmw\":\"Tomorrow\"}return dayName};var getWeek=function getWeek(date){var targetThursday=new Date(date.getFullYear(),date.getMonth(),date.getDate());targetThursday.setDate(targetThursday.getDate()-(targetThursday.getDay()+6)%7+3);var firstThursday=new Date(targetThursday.getFullYear(),0,4);firstThursday.setDate(firstThursday.getDate()-(firstThursday.getDay()+6)%7+3);var ds=targetThursday.getTimezoneOffset()-firstThursday.getTimezoneOffset();targetThursday.setHours(targetThursday.getHours()-ds);var weekDiff=(targetThursday-firstThursday)/(864e5*7);return 1+Math.floor(weekDiff)};var getDayOfWeek=function getDayOfWeek(date){var dow=date.getDay();if(dow===0){dow=7}return dow};var formatTimezone=function formatTimezone(date){return(String(date).match(timezone)||[\"\"]).pop().replace(timezoneClip,\"\").replace(/GMT\\+0000/g,\"UTC\")};\n\n//# sourceURL=webpack://vg-radar/./node_modules/dateformat/lib/dateformat.js?");
+
 /***/ })
 
 /******/ 	});
@@ -234,6 +274,18 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpac
 /******/ 		};
 /******/ 	})();
 /******/ 	
+/******/ 	/* webpack/runtime/global */
+/******/ 	(() => {
+/******/ 		__webpack_require__.g = (function() {
+/******/ 			if (typeof globalThis === 'object') return globalThis;
+/******/ 			try {
+/******/ 				return this || new Function('return this')();
+/******/ 			} catch (e) {
+/******/ 				if (typeof window === 'object') return window;
+/******/ 			}
+/******/ 		})();
+/******/ 	})();
+/******/ 	
 /******/ 	/* webpack/runtime/hasOwnProperty shorthand */
 /******/ 	(() => {
 /******/ 		__webpack_require__.o = (obj, prop) => (Object.prototype.hasOwnProperty.call(obj, prop))
@@ -257,6 +309,29 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpac
 /******/ 			if (!module.children) module.children = [];
 /******/ 			return module;
 /******/ 		};
+/******/ 	})();
+/******/ 	
+/******/ 	/* webpack/runtime/publicPath */
+/******/ 	(() => {
+/******/ 		var scriptUrl;
+/******/ 		if (__webpack_require__.g.importScripts) scriptUrl = __webpack_require__.g.location + "";
+/******/ 		var document = __webpack_require__.g.document;
+/******/ 		if (!scriptUrl && document) {
+/******/ 			if (document.currentScript)
+/******/ 				scriptUrl = document.currentScript.src;
+/******/ 			if (!scriptUrl) {
+/******/ 				var scripts = document.getElementsByTagName("script");
+/******/ 				if(scripts.length) {
+/******/ 					var i = scripts.length - 1;
+/******/ 					while (i > -1 && !scriptUrl) scriptUrl = scripts[i--].src;
+/******/ 				}
+/******/ 			}
+/******/ 		}
+/******/ 		// When supporting browsers where an automatic publicPath is not supported you must specify an output.publicPath manually via configuration
+/******/ 		// or pass an empty string ("") and set the __webpack_public_path__ variable from your code to use your own logic.
+/******/ 		if (!scriptUrl) throw new Error("Automatic publicPath is not supported in this browser");
+/******/ 		scriptUrl = scriptUrl.replace(/#.*$/, "").replace(/\?.*$/, "").replace(/\/[^\/]+$/, "/");
+/******/ 		__webpack_require__.p = scriptUrl;
 /******/ 	})();
 /******/ 	
 /************************************************************************/

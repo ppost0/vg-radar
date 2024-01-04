@@ -2,14 +2,17 @@
 
 
 html {
-  background-color: rgb(49, 39, 52);
+  background-color: rgb(230, 230, 230);
   /* width: 100vw; */
   --white: rgb(240, 240, 240);
+  --black: rgb(10, 10, 10);
 }
 
 body{
-  margin: 0 0 1vw 0;
+  margin: 0;
+  overflow: hidden;
 }
+
 
 main {
   display: flex;
@@ -25,12 +28,15 @@ main {
   height: 4vw;
   color: white;
   font-size: calc(1vw + 3px);
-  background-color: rgb(10, 10, 10);
-  div {
+  background-color: var(--black);
+  a {
     padding: 0 1%;
   }
 }
 
+.main-container {
+  display: flex;
+}
 
 h1 {
   font-family: 'Play', sans-serif;
@@ -39,19 +45,31 @@ h1 {
   color: var(--white);
 }
 
+.sidebar {
+  display: flex;
+  flex: 1;
+  justify-content: center;
+  border-right: 5px solid --black;
+  background-color: var(--black);
+}
+
 .logo {
+  flex: 0;
   height: 20vw;
-  width: 20vw;
   margin: 2vw 0;
+  border-radius: 60px;
 }
 
 .feed {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  flex: 3;
+  grid-template-columns: repeat(2, 1fr);
   gap: 1vw;
-  border-top: 1px solid var(--white);
-  padding-top: 5vw;
-  margin: 0 5vw;
+  padding: 5vw 5vw;
+  overflow-y: scroll;
+  height: 79vh;
+  /* border-top: 1px solid var(--white); */
+  /* margin: 0 5vw; */
 }
 
 .article {
@@ -62,14 +80,22 @@ h1 {
   border: 1px solid black;
   height: 10vw;
   font-size: calc(1vw + 5px);
+  background-color: rgb(68, 53, 72);
+  box-shadow: 2px 2px 5px 2px rgba(0, 0, 0, 0.5);
+  justify-content: space-around;
 }
 
 .title {
-  color: var(--white);
+  color: rgb(213, 182, 138);
   text-decoration: none;
 }
 
+.title:hover {
+  color: rgb(181, 123, 181);
+}
+
 .date {
-  color: rgb(193, 193, 193);
+  color: rgb(184, 184, 184);
   font-size: calc(1vw + 2px);
+  align-self: flex-end;
 }
