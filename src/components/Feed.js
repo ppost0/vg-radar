@@ -15,12 +15,13 @@ const Feed = () => {
       fetch('/feed')
         .then(data => data.json())
         .then((json) => {
+          const list = [];
           for (let i = 0; i < json.items.length; i++) {
             console.log(json.items[i].title);
-            articles.push(
-              <Article key={json.items[i].link}>  </Article>
-            );
+            list.push(<Article key={ json.items[i].link } title={ json.items[i].title } date={ json.items[i].pubDate } url={ json.items[i].link }> </Article>);
           }
+          console.log(articles, 'articles');
+          setArticles(list);
         })
     },[])
 
