@@ -12,15 +12,15 @@ feedController.loadFeed = (req, res, next) => {
   console.log('loading feed...');
 
   parser.parseURL('https://feeds.feedburner.com/ign/games-all')
-  .then(feed => {
-    // Use the parsed feed data
-    console.log(feed.title, '<--- [feed title]');
-    console.log(feed.items[0].title, '<--- [first feed item title]');
+    .then(feed => {
+      // Use the parsed feed data
+      console.log(feed.title, '<--- [feed title]');
+      console.log(feed.items[0].title, '<--- [first feed item title]');
 
-    res.locals.feed = feed;
+      res.locals.feed = feed;
 
-    return next();
-  });
+      return next();
+    });
 
 }
 

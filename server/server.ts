@@ -1,6 +1,6 @@
-const express = require('express');
+import express, { Application, Request, Response, NextFunction } from 'express';
 const path = require('path');
-const app = express();
+const app: Application = express();
 const PORT = 3000;
 
 const feedController = require('./controllers/feedController');
@@ -14,20 +14,20 @@ app.use(express.static(path.resolve(__dirname, '../public')));
 //   res.sendFile(path.join(__dirname, '../public/index.html'));
 // })
 
-app.get('/feed', feedController.loadFeed, (req, res) => {
+app.get('/feed', feedController.loadFeed, (req: Request, res: Response) => {
   console.log('reached router')
   return res.status(200).send(res.locals.feed);
 })
 
 
 // Catch-all route handler
-app.use('/*', (req, res) => {
+app.use('/*', (req:Request, res:Response) => {
   return res.status(404).send('Page not found - 404');
 })
 
 
 // Global error handler
-app.use((err, req, res, next) => {
+app.use((err:Error, req:Request, res:Response, next:NextFunction) => {
   const defaultErr = {
     log: 'Express error handler caught unknown middleware error',
     status: 500,
